@@ -12,6 +12,10 @@ import { DrinkButtonComponent } from './drink-button/drink-button.component';
 import { MoreInfoButtonComponent } from './more-info-button/more-info-button.component';
 import { HeroWineComponent } from './hero-wine/hero-wine.component';
 import { HeroContentComponent } from './hero-content/hero-content.component';
+import { HeroImageComponent } from './hero-image/hero-image.component';
+import { NewBadgeComponent } from './new-badge/new-badge.component';
+import { WineListingComponent } from './wine-listing/wine-listing.component';
+import { DrinkAgainComponent } from './drink-again/drink-again.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { HeroContentComponent } from './hero-content/hero-content.component';
     DrinkButtonComponent,
     MoreInfoButtonComponent,
     HeroWineComponent,
-    HeroContentComponent
+    HeroContentComponent,
+    HeroImageComponent,
+    NewBadgeComponent,
+    WineListingComponent,
+    DrinkAgainComponent
   ],
   imports: [
     BrowserModule,
