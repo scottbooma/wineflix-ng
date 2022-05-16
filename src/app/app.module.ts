@@ -16,6 +16,8 @@ import { HeroImageComponent } from './hero-image/hero-image.component';
 import { NewBadgeComponent } from './new-badge/new-badge.component';
 import { WineListingComponent } from './wine-listing/wine-listing.component';
 import { DrinkAgainComponent } from './drink-again/drink-again.component';
+import { AmountConsumedComponent } from './amount-consumed/amount-consumed.component';
+import { KeepDrinkingComponent } from './keep-drinking/keep-drinking.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { DrinkAgainComponent } from './drink-again/drink-again.component';
     HeroImageComponent,
     NewBadgeComponent,
     WineListingComponent,
-    DrinkAgainComponent
+    DrinkAgainComponent,
+    AmountConsumedComponent,
+    KeepDrinkingComponent
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class WineListingComponent {
   @Input() isNew? = false;
+  @Input() isFinished? = false;
 }
