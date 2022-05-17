@@ -1,5 +1,10 @@
 <div class="hero-content">
-  <app-hero-wine></app-hero-wine>
+  <app-hero-wine
+    [title]="heroContent.title"
+    [subtitle]="heroContent.subtitle"
+    [imageUrl]="heroContent.imageUrl"
+    [description]="heroContent.description"
+  ></app-hero-wine>
   <ul class="controls">
     <li>
       <app-drink-button></app-drink-button>
