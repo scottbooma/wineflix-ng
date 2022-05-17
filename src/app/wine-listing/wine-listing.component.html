@@ -1,5 +1,5 @@
 <div class="wine">
-  <img src="/assets/red-wine.jpg" alt="Wine" />
+  <img src="{{ imageUrl }}" alt="{{ label }}" />
   <app-new-badge *ngIf="isNew"></app-new-badge>
   <app-amount-consumed *ngIf="!isFinished"></app-amount-consumed>
 </div>

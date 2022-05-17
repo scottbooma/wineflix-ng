@@ -1,9 +1,14 @@
 <h2>Drink Again</h2>
 <ul>
-  <li>
-    <app-wine-listing [isNew]="true" [isFinished]="true"></app-wine-listing>
+  <li *ngFor="let finishedWine of finishedWines">
+    <app-wine-listing
+      [isNew]="finishedWine.isNew"
+      [label]="finishedWine.label"
+      [imageUrl]="finishedWine.imageUrl"
+      [isFinished]="finishedWine.isFinished"
+    ></app-wine-listing>
   </li>
-  <li>
+  <!-- <li>
     <app-wine-listing [isFinished]="true"></app-wine-listing>
   </li>
   <li>
@@ -23,5 +28,5 @@
   </li>
   <li>
     <app-wine-listing [isFinished]="true"></app-wine-listing>
-  </li>
+  </li> -->
 </ul>
