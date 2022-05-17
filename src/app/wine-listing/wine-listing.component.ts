@@ -10,4 +10,5 @@ export class WineListingComponent {
   @Input() isFinished? = false;
   @Input() label = '';
   @Input() imageUrl = '';
+  @Input() progress? = 0;
 }

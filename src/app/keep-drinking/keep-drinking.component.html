@@ -1,6 +1,14 @@
 <h2>Keep Drinking</h2>
 <ul>
-  <li>
+  <li *ngFor="let unfinishedWine of unfinishedWines">
+    <app-wine-listing
+      [label]="unfinishedWine.label"
+      [imageUrl]="unfinishedWine.imageUrl"
+      [isFinished]="unfinishedWine.isFinished"
+      [progress]="unfinishedWine.progress"
+    ></app-wine-listing>
+  </li>
+  <!-- <li>
     <app-wine-listing></app-wine-listing>
   </li>
   <li>
@@ -20,8 +28,5 @@
   </li>
   <li>
     <app-wine-listing></app-wine-listing>
-  </li>
-  <li>
-    <app-wine-listing></app-wine-listing>
-  </li>
+  </li> -->
 </ul>
